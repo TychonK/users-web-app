@@ -1,0 +1,115 @@
+.register-form {
+  width: 60%;
+  margin: 60px auto;
+  background: rgb(255, 249, 220);
+  border-radius: 10px;
+  padding: 60px 120px 80px 120px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  @media(max-width: 600px) {
+      padding: 20px 60px 40px 60px;
+  }
+}
+.register-label {
+  display: block;
+  position: relative;
+  margin: 40px 0px;
+  @media (max-width: 600px) {
+      margin: 20px 0;
+  }
+}
+.label-txt {
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(78, 78, 78);
+  transition: ease .3s;
+  @media(max-width: 600px) {
+      font-size: 16px;
+  }
+}
+.register-input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.line-box {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #BCBCBC;
+}
+
+.line {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #8BC34A;
+  transition: ease .6s;
+}
+
+.register-input:focus + .line-box .line {
+  width: 100%;
+}
+
+.label-active {
+  top: -3em;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgb(220,220,220);
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: ease .3s;
+}
+
+.register-button:hover {
+  background: #8BC34A;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.register-loader svg {
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.register-loader_backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(88, 88, 88, 0.178);
+  z-index: 2;
+}
+.login-link {
+  margin-left: 20px;
+  background-color: rgb(135, 255, 229);
+  @media (max-width: 776px) {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 110px;
+  }
+}

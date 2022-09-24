@@ -1,0 +1,29 @@
+hr {
+    margin: 0;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.log-out_button {
+    
+    vertical-align: middle;
+    margin: 0.5rem 1rem;
+    line-height: 1.1;
+}
+
+.welcome-text {
+    margin: 0.6rem 1rem;
+}
+
+.auth_content {
+    display: flex;
+    @media (max-width: 518px) {
+        margin: 0 auto;
+    }  
+}

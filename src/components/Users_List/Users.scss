@@ -1,0 +1,33 @@
+table {
+    margin: 50px 0 25px 0;
+}
+
+.check {
+    text-align: center;
+}
+
+button {
+    margin: 0 20px;
+
+    & svg {
+        margin-left: 10px;
+    }
+}
+
+.toolbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-check {
+    text-align: center;
+    padding: 0;
+}
+
+.form-check-input {
+    margin: 0;
+    position: inherit;
+    width: 20px;
+    height: 20px;
+}

@@ -1,2 +1,1 @@
-# users-web-app
- Users web application with registration and login.
+Users web application front end

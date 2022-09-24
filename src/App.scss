@@ -1,0 +1,103 @@
+body {
+  background-color: rgba(141, 209, 255, 0.089);
+}
+
+.home-wrapper {
+    text-align: center;
+    padding: 30px;
+}
+
+h2 {
+    margin: 0;
+    &:nth-child(1) {
+        margin-top: 10px;
+    } 
+    &:nth-child(2) {
+        margin-top: 10px;
+    }
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(0, 140, 255);
+    &:active {
+        background: blue;
+    }
+}
+
+.form-control {
+    &.filter-input {
+        max-width: 100%;
+        margin: 0;
+    }
+    @media (max-width: 472px) {
+        max-width: none;
+    }
+}
+
+label {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.delete-button {
+    margin-left: auto;
+    transition: 150ms;
+
+    height: 50%;
+
+    padding: 3px 5px;
+    line-height: 1;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:active {
+        background: red;
+    }
+}
+li {
+    display: flex;
+    vertical-align: middle;
+    font-size: 16px;
+    &:not(:first-child) {
+        margin-top: 5px;
+    }
+}
+
+nav{
+  display: flex;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.active {
+  color: black;
+}
+
+.hBack {
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+
+.fallback-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    height: 20%;
+}
